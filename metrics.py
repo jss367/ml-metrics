@@ -1,3 +1,7 @@
+"""
+TODO: Add IoU = (intersection + epsilon) / (union + epsilon)
+"""
+
 import sys
 
 EPSILON = sys.float_info.epsilon
