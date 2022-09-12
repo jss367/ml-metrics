@@ -46,3 +46,10 @@ def calc_specificity(tn, fp, epsilon=EPSILON):
     Returns 1 in edge case where fp=0 because there were no incorrect predictions
     """
     return (tn + epsilon) / (tn + fp + epsilon)
+
+
+def calc_iou(tp, fp, fn, epsilon=EPSILON):
+    """
+    Returns 1 in edge case where tp=fp=fn=0 because there were no incorrect predictions
+    """
+    return (tp + epsilon) / (tp + fp + tn + epsilon)
